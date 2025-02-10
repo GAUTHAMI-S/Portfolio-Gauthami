@@ -8,7 +8,7 @@ const About = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="about"
-      className="w-full px-[12%] py-10 scroll-mt-20 mx-auto flex  flex-col items-center justify-center"
+      className="w-full px-[12%] py-24 scroll-mt-20 mx-auto flex  flex-col items-center justify-center"
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}

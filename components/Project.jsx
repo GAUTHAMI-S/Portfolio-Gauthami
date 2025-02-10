@@ -1,6 +1,7 @@
 import { slides } from "@/assests/Data";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 
 const Project = () => {
   const Carousel = () => {
@@ -57,13 +58,13 @@ const Project = () => {
               className="px-4 py-2 bg-gray-200 dark:bg-gray-900 rounded-full shadow-md hover:bg-gray-300 dark:hover:bg-gray-800 transition"
               onClick={prevSlide}
             >
-              ◀
+              <GrFormPrevious className="w-8 h-8" />
             </button>
             <button
               className="px-4 py-2 bg-gray-200 dark:bg-gray-900 rounded-full shadow-md hover:bg-gray-300 dark:hover:bg-gray-800 transition"
               onClick={nextSlide}
             >
-              ▶
+              <GrFormNext className="w-8 h-8" />
             </button>
           </div>
         </motion.div>
