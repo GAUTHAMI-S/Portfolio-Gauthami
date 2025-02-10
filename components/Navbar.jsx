@@ -5,7 +5,8 @@ import { FaEarlybirds, FaLocationArrow } from "react-icons/fa";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { MdOutlineSegment } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
-const Navbar = () => {
+
+const Navbar = ({ setIsDarkMode }) => {
   const sideMenuRef = useRef();
   const [isScroll, setIsScroll] = useState(false);
   const openMenu = () => {
@@ -25,12 +26,14 @@ const Navbar = () => {
   }, []);
   return (
     <>
-      <div className="bg-green-200  fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+      <div className=" fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
         {" "}
       </div>
       <nav
         className={`${
-          isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm" : ""
+          isScroll
+            ? "bg-white dark:bg-darkElement bg-opacity-50 backdrop-blur-lg shadow-sm"
+            : ""
         } w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50`}
       >
         <a href="#top" className="w-28 cursor-pointer ml-14">
@@ -38,7 +41,9 @@ const Navbar = () => {
         </a>
         <ul
           className={`${
-            isScroll ? "" : "bg-white shadow-sm bg-opacity-50"
+            isScroll
+              ? ""
+              : "bg-white dark:bg-black dark:border shadow-sm bg-opacity-50"
           } hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 `}
         >
           {NavItems.map((item) => {
@@ -51,7 +56,10 @@ const Navbar = () => {
         </ul>
         <div className="flex items-center gap-4">
           <button>
-            <BsMoonStarsFill className="w-6 h-6" />
+            <BsMoonStarsFill
+              className="w-6 h-6"
+              onClick={() => setIsDarkMode((prev) => !prev)}
+            />
           </button>
           <a
             href="#contact"
@@ -67,7 +75,7 @@ const Navbar = () => {
         {/* mobile menu */}
         <ul
           ref={sideMenuRef}
-          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500"
+          className="flex md:hidden  flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen  dark:bg-darkTheme bg-white  shadow-sm transition duration-500"
         >
           <div className="absolute right-6 top-6" onClick={closeMenu}>
             <IoClose className="w-7 h-7 cursor-pointer" />{" "}
