@@ -1,5 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Portfolio - Gauthami Sankaramangalam
 
-Click here:[gauthami.vercel.app]
+Click here : [My Portfolio](https://gauthami.vercel.app/)
