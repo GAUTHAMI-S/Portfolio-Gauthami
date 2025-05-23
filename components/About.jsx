@@ -8,7 +8,7 @@ const About = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="about"
-      className="w-full px-[12%] py-24 scroll-mt-20 mx-auto flex  flex-col items-center justify-center"
+      className="w-full px-[12%] bg-pink-200 py-24 scroll-mt-20 mx-auto flex  flex-col items-center justify-center"
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
@@ -66,10 +66,10 @@ const About = () => {
             return (
               <div
                 key={item.key}
-                className="border-l border-black hover:to-lightHover hover:shadow-black"
+                className="border-l pl-3  border-black hover:to-lightHover hover:shadow-black"
               >
                 {item.title}
-                {item.cgpa}
+                {"  "} {item.cgpa}
               </div>
             );
           })}

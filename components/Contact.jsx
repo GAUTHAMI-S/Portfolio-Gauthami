@@ -31,13 +31,15 @@ const Contact = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="contact"
+      viewport={{ once: true }}
       className=" w-full px-[12%] py-10 scroll-mt-20 mx-auto "
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
         className="text-center mb-2 text-lg font-Ovo"
+        viewport={{ once: true }}
       >
         Connect with me
       </motion.h4>
@@ -46,6 +48,7 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
         className="text-center text-5xl font-Ovo"
+        viewport={{ once: true }}
       >
         Get in touch
       </motion.h2>
@@ -53,6 +56,7 @@ const Contact = () => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.5 }}
+        viewport={{ once: true }}
         className="text-center max-x-2xl mx-auto. mb-12 font-Ovo"
       >
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe
@@ -64,6 +68,7 @@ const Contact = () => {
         transition={{ duration: 0.9, delay: 0.5 }}
         className="flex flex-col max-w-2xl mx-auto"
         onSubmit={onSubmit}
+        viewport={{ once: true }}
       >
         <div className="grid grid-cols-auto gap-6 mt-10 mb-8">
           <motion.input
@@ -73,6 +78,7 @@ const Contact = () => {
             type="text"
             placeholder="Enter your name"
             required
+            viewport={{ once: true }}
             className="flex-1 p-3  outline-none  border-[0.5px] dark:border border-gray-400 rounded-md bg-white dark:bg-black"
           />
           <motion.input
@@ -82,10 +88,12 @@ const Contact = () => {
             type="email"
             placeholder="Enter your email"
             required
+            viewport={{ once: true }}
             className="flex-1 p-3  outline-none  border-[0.5px] dark:border border-gray-400 rounded-md bg-white dark:bg-black"
           />
         </div>
         <motion.textarea
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.3 }}
@@ -96,8 +104,9 @@ const Contact = () => {
         ></motion.textarea>
         <motion.button
           whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.3, delay: 1.3 }}
           type="submit"
+          viewport={{ once: true }}
           className="py-3 px-8 w-max  flex items-center justify-between gap-2 bg-black dark:border text-white rounded-full mx-auto hover:bg-black duration-500 "
         >
           Submit now <FaLocationArrow className="w-6 h-6" />

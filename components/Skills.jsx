@@ -23,17 +23,20 @@ const Skills = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="skills"
-      className="h-full w-full px-[12%] py-24 scroll-mt-20 mx-auto flex  flex-col items-center justify-center"
+      viewport={{ once: true }}
+      className="min-h-screen bg-green-200 w-full px-[12%] py-16 scroll-mt-20 mx-auto flex gap-5  flex-col items-center justify-center"
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
         className="text-center mb-2 text-lg font-Ovo"
+        viewport={{ once: true }}
       >
         My Skill Set
       </motion.h4>
       <motion.h2
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
@@ -44,15 +47,21 @@ const Skills = () => {
       <p className="text-center max-x-2xl mx-auto. mb-12 font-Ovo">
         The skills, tools and technologies i use:
       </p>
-      <motion.div className="grid grid-cols-7 justify-items-center gap-8">
+      <motion.div
+        viewport={{ once: true }}
+        className="grid grid-cols-8 bg-red-300 justify-items-center gap-8"
+      >
         {icons.map((i, ind) => {
           return (
             <motion.span
+          
+              viewport={{ once: true }}
               key={ind}
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: ind * 0.2, }}
+              transition={{ duration: 0.3, delay: ind * 0.2 }}
               whileHover={{ scale: 1.5 }}
+              className=" "
             >
               {i}
             </motion.span>

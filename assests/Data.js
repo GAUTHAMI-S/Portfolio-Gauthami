@@ -58,16 +58,6 @@ export const Education = [
     title: "Btech in Computer Science",
     cgpa: "8.97",
   },
-  {
-    key: 2,
-    title: "Btech in Computer Science",
-    cgpa: "8.97",
-  },
-  {
-    key: 3,
-    title: "Btech in Computer Science",
-    cgpa: "8.97",
-  },
 ];
 
 export const WEB3_ACCESS_KEY = "e1182209-8782-4829-a2d5-a05555e95a8c";
