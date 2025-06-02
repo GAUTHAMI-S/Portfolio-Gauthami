@@ -1,9 +1,10 @@
 import React from "react";
-import { FaHtml5, FaReact } from "react-icons/fa";
+import { FaDocker, FaGithub, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
-import { SiNextdotjs, SiPython } from "react-icons/si";
-import { TbSql } from "react-icons/tb";
+import { SiFlask, SiNextdotjs, SiPython } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { FiFramer } from "react-icons/fi";
+import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 const icons = [
@@ -13,8 +14,13 @@ const icons = [
   <FaReact className="w-10 h-10 " />,
   <SiNextdotjs className="w-10 h-10" />,
   <SiPython className="w-10 h-10" />,
-  <TbSql className="w-11 h-11" />,
+  <BiLogoPostgresql className="w-11 h-11" />,
   <FiFramer className="w-10 h-10" />,
+  <FaDocker className="w-10 h-10" />,
+  <SiFlask className="w-10 h-10" />,
+  <FaGithub className="w-10 h-10" />,
+  <RiTailwindCssFill className="w-10 h-10" />,
+  <FaSass className="w-10 h-10" />,
 ];
 const Skills = () => {
   return (
@@ -24,7 +30,7 @@ const Skills = () => {
       transition={{ duration: 1 }}
       id="skills"
       viewport={{ once: true }}
-      className="min-h-screen bg-green-200 w-full px-[12%] py-16 scroll-mt-20 mx-auto flex gap-5  flex-col items-center justify-center"
+      className="min-h-screen w-full px-[12%] py-16 scroll-mt-20 mx-auto flex gap-5  flex-col items-center justify-center"
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
@@ -49,19 +55,19 @@ const Skills = () => {
       </p>
       <motion.div
         viewport={{ once: true }}
-        className="grid grid-cols-8 bg-red-300 justify-items-center gap-8"
+        className="grid grid-cols-9 justify-items-center gap-8"
       >
         {icons.map((i, ind) => {
           return (
             <motion.span
-          
               viewport={{ once: true }}
               key={ind}
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: ind * 0.2 }}
+              transition={{ duration: 0.3, delay: ind * 0.1 }}
               whileHover={{ scale: 1.5 }}
-              className=" "
+              className="cursor-pointer"
+              aria-label={ind}
             >
               {i}
             </motion.span>

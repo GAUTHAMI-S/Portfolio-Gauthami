@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className="bg-green-300 pt-20 md:pt-24 w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <div className=" pt-20 md:pt-24 w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
@@ -38,7 +38,7 @@ const Header = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="text-3xl sm:text-6xl lg:text-6.5xl font-Ovo"
       >
-        Frontend web developer from India
+        Creative Frontend Developer from India
       </motion.h1>
       <motion.p
         viewport={{ once: true }}
@@ -47,10 +47,11 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.9 }}
         className="max-w-2xl mx-auto font-Ovo"
       >
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        nam est itaque recusandae voluptatem consequuntur dolor mollitia ducimus
-        quos molestiae porro quis reiciendis, assumenda aperiam iusto vel saepe
-        ab quae!
+        I’m a passionate Frontend Developer with a strong foundation in modern
+        web technologies like React, Next.js, and Tailwind CSS. I love bringing
+        ideas to life in the browser and creating seamless, user-friendly
+        experiences. With a keen eye for design and a dedication to clean code,
+        I'm always excited to take on new challenges and learn continuously.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a
@@ -70,7 +71,7 @@ const Header = () => {
           href="/sample-resume.pdf"
           download
           viewport={{ once: true }}
-          className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
+          className=" px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
         >
           my resume <FaDownload className="w-6 h-6" />
         </motion.a>

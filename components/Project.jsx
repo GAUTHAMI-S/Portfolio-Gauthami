@@ -14,10 +14,11 @@ const Project = () => {
     return (
       <>
         <motion.div
+          viewport={{ once: true }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.9, delay: 0.6 }}
-          className="relative bg-blue-200  w-full max-w-2xl  shadow-lg rounded-2xl p-6 overflow-hidden dark:bg-darkElement"
+          className="relative   w-full max-w-2xl  shadow-lg rounded-2xl p-6 overflow-hidden dark:bg-darkElement"
         >
           <div className="w-full h-72 flex items-center justify-center overflow-hidden  ">
             <AnimatePresence mode="wait">
@@ -77,8 +78,8 @@ const Project = () => {
       id="project"
       className=" w-full px-[12%] py-10 scroll-mt-20 mx-auto  flex flex-col items-center justify-center "
     >
-      
       <motion.h2
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}

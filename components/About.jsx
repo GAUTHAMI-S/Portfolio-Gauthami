@@ -4,13 +4,15 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <motion.div
+      viewport={{ once: true }}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="about"
-      className="w-full px-[12%] bg-pink-200 py-24 scroll-mt-20 mx-auto flex  flex-col items-center justify-center"
+      className="w-full px-[12%] py-24 scroll-mt-20 mx-auto flex  flex-col items-center justify-center"
     >
       <motion.h4
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
@@ -19,6 +21,7 @@ const About = () => {
         Introduction
       </motion.h4>
       <motion.h2
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
@@ -27,6 +30,7 @@ const About = () => {
         About me
       </motion.h2>
       <motion.p
+        viewport={{ once: true }}
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
@@ -37,6 +41,7 @@ const About = () => {
       </motion.p>
       <div className="flex flex-col items-center md:flex-row gap-8 ">
         <motion.div
+          viewport={{ once: true }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -51,6 +56,7 @@ const About = () => {
         </motion.div>
         <div className="flex-1  ">
           <motion.p
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -61,18 +67,26 @@ const About = () => {
             accusamus totam enim quia inventore temporibus id harum dignissimos
             veritatis sint illo in!
           </motion.p>
-
+          {/* 
           {Education.map((item) => {
             return (
-              <div
-                key={item.key}
-                className="border-l pl-3  border-black hover:to-lightHover hover:shadow-black"
-              >
+              <div key={item.key} className="border-l pl-3  border-black ">
                 {item.title}
                 {"  "} {item.cgpa}
               </div>
             );
-          })}
+          })} */}
+          <motion.ul className="list-disc pl-5 space-y-2 max-w-xl text-left">
+            <li>I value clean, readable code and consistent UI/UX.</li>
+            <li>
+              I believe in continuous learning and improving with each project.
+            </li>
+            <li>
+              I collaborate well in teams and enjoy turning ideas into
+              user-friendly apps.
+            </li>
+          </motion.ul>
+
           <div>
             <div className="box"></div>
           </div>

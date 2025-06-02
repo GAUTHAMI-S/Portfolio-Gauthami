@@ -10,14 +10,14 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="mt-20 ">
-      <div className="text-center flex flex-col gap-2 justify-center items-center">
+    <div className="mt-12 ">
+      {/* <div className="text-center flex flex-col gap-2 justify-center items-center">
         <FaEarlybirds className="w-8 h-8 " />
         <div className="w-max flex items-center gap-2 max-auto">
           <MdEmail className="w-8 h-8 " /> gauthamisankaramangalam@gmail.com
         </div>{" "}
-      </div>
-      <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+      </div> */}
+      <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-2 py-6">
         <p>@ 2025 Gauthami Sankaramangalam. All rights reserved.</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>

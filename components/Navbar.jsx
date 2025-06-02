@@ -36,8 +36,8 @@ const Navbar = ({ setIsDarkMode }) => {
             : ""
         } w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50`}
       >
-        <a href="#top" className="w-28 cursor-pointer ml-14">
-          <FaEarlybirds className="w-8 h-8 " />
+        <a href="#top" className="w-28  ml-14 ">
+          <FaEarlybirds className="w-8 cursor-pointer h-8 hover:scale-110 transition ease-in-out delay-75" />
         </a>
         <ul
           className={`${
@@ -48,7 +48,10 @@ const Navbar = ({ setIsDarkMode }) => {
         >
           {NavItems.map((item) => {
             return (
-              <li key={item.key} className="font-Ovo">
+              <li
+                key={item.key}
+                className="font-Ovo hover:scale-110 transition ease-in-out delay-75"
+              >
                 <a href={item.position}>{item.title} </a>
               </li>
             );
@@ -57,13 +60,13 @@ const Navbar = ({ setIsDarkMode }) => {
         <div className="flex items-center gap-4">
           <button>
             <BsMoonStarsFill
-              className="w-6 h-6"
+              className="w-6 h-6 dark:hover:scale-110 hover:scale-110 transition ease-in-out delay-75 "
               onClick={() => setIsDarkMode((prev) => !prev)}
             />
           </button>
           <a
             href="#contact"
-            className="hidden font-Ovo lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
+            className="hidden hover:scale-110 transition ease-in-out delay-75 dark:hover:shadow-sm dark:hover:shadow-white font-Ovo lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
           >
             Contact
             <FaLocationArrow className="w-6 h-6" />
@@ -78,11 +81,15 @@ const Navbar = ({ setIsDarkMode }) => {
           className="flex md:hidden  flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen  dark:bg-darkTheme bg-white  shadow-sm transition duration-500"
         >
           <div className="absolute right-6 top-6" onClick={closeMenu}>
-            <IoClose className="w-7 h-7 cursor-pointer" />{" "}
+            <IoClose className=" hover:scale-110 transition ease-in-out delay-75 w-7 h-7 cursor-pointer" />{" "}
           </div>
           {NavItems.map((item) => {
             return (
-              <li key={item.key} onClick={closeMenu} className="font-Ovo">
+              <li
+                key={item.key}
+                onClick={closeMenu}
+                className="font-Ovo hover:scale-110 transition ease-in-out delay-75"
+              >
                 <a href={item.position}>{item.title} </a>
               </li>
             );
