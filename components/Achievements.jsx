@@ -19,7 +19,7 @@ const Achievements = () => {
   return (
     <section
       id="achievements"
-      className="w-full px-[12%] py-16 scroll-mt-20 mx-auto bg-gray-50 dark:bg-darkBg"
+      className="w-full px-[12%] py-16 scroll-mt-20 mx-auto dark:bg-darkBg"
     >
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
