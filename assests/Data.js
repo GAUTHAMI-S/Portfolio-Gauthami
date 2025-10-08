@@ -3,7 +3,8 @@ export const NavItems = [
   { key: 2, position: "#about", title: "About" },
   { key: 3, position: "#skills", title: "Skills" },
   { key: 4, position: "#project", title: "Projects" },
-  { key: 5, position: "#contact", title: "Contact Me" },
+  { key: 5, position: "#achievements", title: "Achievements" },
+  { key: 6, position: "#contact", title: "Contact Me" },
 ];
 
 export const skillSet = [
@@ -57,6 +58,32 @@ export const Education = [
     key: 1,
     title: "Btech in Computer Science",
     cgpa: "8.97",
+  },
+];
+export const achievements = [
+  {
+    id: 1,
+    title: "Geon Budding Star 2025",
+    date: "Awarded by Gadgeon Smart Systems",
+    description:
+      "Recognized as a promising emerging engineer for demonstrating exceptional initiative, technical excellence, and commitment to continuous learning.",
+    img: "/budding.jpeg",
+  },
+  {
+    id: 2,
+    title: "Standing Ovation Award",
+    date: "2025 · Gadgeon Smart Systems",
+    description:
+      "Received for outstanding performance, innovation, and contribution towards successful project delivery and product improvement.",
+    img: "/standingovation.jpg",
+  },
+  {
+    id: 3,
+    title: "Qualified GATE 2025",
+    date: "Graduate Aptitude Test in Engineering (Computer Science)",
+    description:
+      "Secured qualification in one of India’s most competitive exams, demonstrating strong analytical and problem-solving skills.",
+    img: "/gate.jpeg",
   },
 ];
 

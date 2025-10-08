@@ -38,7 +38,7 @@ const Header = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="text-3xl sm:text-6xl lg:text-6.5xl font-Ovo"
       >
-        Creative Frontend Developer from India
+        Creative Full Stack Developer from India
       </motion.h1>
       <motion.p
         viewport={{ once: true }}
@@ -47,11 +47,14 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.9 }}
         className="max-w-2xl mx-auto font-Ovo"
       >
-        I’m a passionate Frontend Developer with a strong foundation in modern
-        web technologies like React, Next.js, and Tailwind CSS. I love bringing
-        ideas to life in the browser and creating seamless, user-friendly
-        experiences. With a keen eye for design and a dedication to clean code,
-        I'm always excited to take on new challenges and learn continuously.
+        I’m a Full Stack Developer driven by curiosity and a deep passion for
+        building meaningful digital experiences. I enjoy exploring new
+        technologies and applying what I learn to create clean, efficient, and
+        impactful solutions. For me, coding is more than just solving problems —
+        it’s about understanding challenges, designing smart solutions, and
+        bringing ideas to life through code. I take ownership of my work, stay
+        committed to continuous improvement, and strive to deliver with both
+        precision and purpose.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a
@@ -68,7 +71,7 @@ const Header = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          href="/sample-resume.pdf"
+          href="/Gauthami_S.pdf"
           download
           viewport={{ once: true }}
           className=" px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"

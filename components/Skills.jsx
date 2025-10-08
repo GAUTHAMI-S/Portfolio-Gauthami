@@ -8,21 +8,23 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 const icons = [
-  <FaHtml5 className="w-10 h-10 " />,
-  <IoLogoCss3 className="w-10 h-10 " />,
-  <IoLogoJavascript className="w-10 h-10" />,
-  <FaReact className="w-10 h-10 " />,
-  <SiNextdotjs className="w-10 h-10" />,
-  <SiPython className="w-10 h-10" />,
-  <BiLogoPostgresql className="w-11 h-11" />,
-  <FiFramer className="w-10 h-10" />,
-  <FaDocker className="w-10 h-10" />,
-  <SiFlask className="w-10 h-10" />,
-  <FaGithub className="w-10 h-10" />,
-  <RiTailwindCssFill className="w-10 h-10" />,
-  <FaSass className="w-10 h-10" />,
+  <FaHtml5 className="w-20 h-20 " />,
+  <IoLogoCss3 className="w-20 h-20 " />,
+  <IoLogoJavascript className="w-20 h-20" />,
+  <FaReact className="w-20 h-20 " />,
+  <SiNextdotjs className="w-20 h-20" />,
+  <SiPython className="w-20 h-20" />,
+  <BiLogoPostgresql className="w-20 h-20" />,
+  <FiFramer className="w-20 h-20" />,
+  <FaDocker className="w-20 h-20" />,
+  <SiFlask className="w-20 h-20" />,
+  <FaGithub className="w-20 h-20" />,
+  <RiTailwindCssFill className="w-20 h-20" />,
+  <FaSass className="w-20 h-20" />,
 ];
 const Skills = () => {
+
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -30,50 +32,51 @@ const Skills = () => {
       transition={{ duration: 1 }}
       id="skills"
       viewport={{ once: true }}
-      className="min-h-screen w-full px-[12%] py-16 scroll-mt-20 mx-auto flex gap-5  flex-col items-center justify-center"
+      className="relative min-h-screen w-full px-[12%] py-16 scroll-mt-20 mx-auto flex flex-col items-center justify-center overflow-hidden"
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
         className="text-center mb-2 text-lg font-Ovo"
-        viewport={{ once: true }}
       >
         My Skill Set
       </motion.h4>
       <motion.h2
-        viewport={{ once: true }}
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-5xl font-Ovo"
+        className="text-center text-5xl font-Ovo mb-12"
       >
         Tech Stack
       </motion.h2>
-      <p className="text-center max-x-2xl mx-auto. mb-12 font-Ovo">
-        The skills, tools and technologies i use:
-      </p>
-      <motion.div
-        viewport={{ once: true }}
-        className="grid grid-cols-9 justify-items-center gap-8"
-      >
-        {icons.map((i, ind) => {
-          return (
+
+      {/* Moving icons row */}
+      <div className="relative w-full overflow-hidden">
+        {/* Fog gradient edges */}
+        <div className="pointer-events-none absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-gray-50 dark:from-darkBg to-transparent z-10" />
+        <div className="pointer-events-none absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-gray-50 dark:from-darkBg to-transparent z-10" />
+
+        <motion.div
+          className="flex gap-10"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            ease: "linear",
+            duration: 20,
+            repeat: Infinity,
+          }}
+        >
+          {[...icons, ...icons].map((icon, index) => (
             <motion.span
-              viewport={{ once: true }}
-              key={ind}
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: ind * 0.1 }}
+              key={index}
               whileHover={{ scale: 1.5 }}
-              className="cursor-pointer"
-              aria-label={ind}
+              className="text-5xl cursor-pointer"
             >
-              {i}
+              {icon}
             </motion.span>
-          );
-        })}
-      </motion.div>
+          ))}
+        </motion.div>
+      </div>
     </motion.div>
   );
 };
