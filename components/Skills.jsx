@@ -54,8 +54,8 @@ const Skills = () => {
       {/* Moving icons row */}
       <div className="relative w-full overflow-hidden">
         {/* Fog gradient edges */}
-        <div className="pointer-events-none absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-gray-50 dark:from-darkBg to-transparent z-10" />
-        <div className="pointer-events-none absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-gray-50 dark:from-darkBg to-transparent z-10" />
+        <div className="pointer-events-none absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-gray-50 dark:from-black dark:to-transparent z-10" />
+        <div className="pointer-events-none absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-gray-50 dark:from-black dark:to-transparent z-10" />
 
         <motion.div
           className="flex gap-10"
