@@ -56,10 +56,30 @@ export const Work = [
 export const Education = [
   {
     key: 1,
-    title: "Btech in Computer Science",
-    cgpa: "8.97",
+    title: "B.Tech in Computer Science and Engineering",
+    cgpa: "8.92",
+    institution: "Amal Jyothi College of Engineering",
+    location: "Kerala, India",
+    duration: "2019 - 2023"
   },
+  {
+    key: 2,
+    title: "12th Grade",
+    cgpa: "96%",
+    institution: "N.S.S Higher Secondary School, Pandalam",
+    location: "Kerala, India",
+    duration: "2018"
+  },
+  {
+    key: 3,
+    title: "10th Grade",
+    cgpa: "10 CGPA",
+    institution: "V.V. Higher Secondary School, Thamarakulam",
+    location: "Kerala, India",
+    duration: "2016"
+  }
 ];
+
 export const achievements = [
   {
     id: 1,
