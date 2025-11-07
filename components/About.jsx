@@ -36,8 +36,7 @@ const About = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="text-center max-x-2xl mx-auto. mb-12 font-Ovo"
       >
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe
-        fugit,
+       My Love for the code grows everyday!!!
       </motion.p>
       <div className="flex flex-col items-center md:flex-row gap-8 ">
         <motion.div
@@ -67,15 +66,7 @@ const About = () => {
             accusamus totam enim quia inventore temporibus id harum dignissimos
             veritatis sint illo in!
           </motion.p>
-          {/* 
-          {Education.map((item) => {
-            return (
-              <div key={item.key} className="border-l pl-3  border-black ">
-                {item.title}
-                {"  "} {item.cgpa}
-              </div>
-            );
-          })} */}
+
           <motion.ul className="list-disc pl-5 space-y-2 max-w-xl text-left">
             <li>I value clean, readable code and consistent UI/UX.</li>
             <li>
@@ -88,7 +79,9 @@ const About = () => {
           </motion.ul>
 
           <div>
-            <div className="box"></div>
+            <div className="box">
+            
+            </div>
           </div>
         </div>
       </div>
