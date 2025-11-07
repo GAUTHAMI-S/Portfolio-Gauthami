@@ -1,5 +1,6 @@
 import React from "react";
 import { Education } from "@/assests/Data";
+import EducationTimeline from './EductionTimeline'
 import { motion } from "framer-motion";
 const About = () => {
   return (
@@ -80,7 +81,7 @@ const About = () => {
 
           <div>
             <div className="box">
-            
+            <EductionTimeline />
             </div>
           </div>
         </div>
