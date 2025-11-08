@@ -81,7 +81,7 @@ const About = () => {
 
           <div>
             <div className="box">
-            <EductionTimeline />
+            <EducationTimeline />
             </div>
           </div>
         </div>
