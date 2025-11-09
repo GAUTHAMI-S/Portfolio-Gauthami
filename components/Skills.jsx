@@ -32,7 +32,7 @@ const Skills = () => {
       transition={{ duration: 1 }}
       id="skills"
       viewport={{ once: true }}
-      className="relative min-h-screen w-full px-[12%] py-16 scroll-mt-20 mx-auto flex flex-col items-center justify-center overflow-hidden"
+      className="relative min-h-[80%] w-full px-[15%] py-64 scroll-mt-20 mx-auto flex flex-col items-center justify-item gap-6 overflow-hidden"
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
@@ -52,7 +52,11 @@ const Skills = () => {
       </motion.h2>
 
       {/* Moving icons row */}
-      <div className="relative w-full overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="relative w-full overflow-hidden">
         {/* Fog gradient edges */}
         <div className="pointer-events-none absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-gray-50 dark:from-black dark:to-transparent z-10" />
         <div className="pointer-events-none absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-gray-50 dark:from-black dark:to-transparent z-10" />
@@ -76,7 +80,7 @@ const Skills = () => {
             </motion.span>
           ))}
         </motion.div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
