@@ -56,11 +56,11 @@ export const Work = [
 export const Education = [
   {
     key: 1,
-    title: "B.Tech in Computer Science and Engineering",
-    cgpa: "8.92",
-    institution: "Amal Jyothi College of Engineering",
+    title: "10th Grade",
+    cgpa: "10 CGPA",
+    institution: "V.V. Higher Secondary School, Thamarakulam",
     location: "Kerala, India",
-    duration: "2019 - 2023"
+    duration: "2016"
   },
   {
     key: 2,
@@ -72,12 +72,12 @@ export const Education = [
   },
   {
     key: 3,
-    title: "10th Grade",
-    cgpa: "10 CGPA",
-    institution: "V.V. Higher Secondary School, Thamarakulam",
+    title: "B.Tech in Computer Science and Engineering",
+    cgpa: "8.92",
+    institution: "Amal Jyothi College of Engineering",
     location: "Kerala, India",
-    duration: "2016"
-  }
+    duration: "2019 - 2023"
+  },
 ];
 
 export const achievements = [
@@ -110,21 +110,16 @@ export const achievements = [
 export const WEB3_ACCESS_KEY = "e1182209-8782-4829-a2d5-a05555e95a8c";
 export const slides = [
   {
-    img: "https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp",
+    img: "./agape.png",
     date: "26 December 2019",
-    title: "Lorem Ipsum Dolor8",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?",
+    title: "Agape",
+    text: "Developed a cross-platform mobile app using React Native and Firebase in a 4-member team, reflecting strong teamwork.",
   },
   {
-    img: "https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp",
+    img: "./quickChat.png",
     date: "26 December 2019",
-    title: "Lorem Ipsum Dolor2",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?",
+    title: "Quick Chat",
+    text: "Built a full-stack real-time chat application using Socket.io for instant message delivery and typing indicators",
   },
-  {
-    img: "https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp",
-    date: "26 December 2019",
-    title: "Lorem Ipsum Dolor3",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?",
-  },
+
 ];

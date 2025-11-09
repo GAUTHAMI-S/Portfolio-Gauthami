@@ -11,7 +11,7 @@ const EducationTimeline = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="w-full px-[12%] py-24 mx-auto flex flex-col items-center justify-center"
+      className="w-full py-5 mx-auto flex flex-col items-center justify-center"
     >
       <motion.h3
         viewport={{ once: true }}
@@ -38,18 +38,19 @@ const EducationTimeline = () => {
           >
             {/* Dot representing the event year */}
             <div
-              className={`w-8 h-8 rounded-full bg-blue-500 cursor-pointer ${
-                hovered === item.key ? "scale-125" : ""
-              } transition-all duration-300`}
+              className={`w-8 h-8 rounded-full bg-gray-800 dark:bg-white cursor-pointer ${hovered === item.key ? "scale-125" : ""
+                } transition-all duration-300`}
             ></div>
 
             {/* Tooltip */}
             {hovered === item.key && (
-              <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 w-64 p-4 bg-white shadow-lg rounded-md text-center">
+              <div className="absolute bottom-16 left-1/2 transform 
+              -translate-x-1/2 w-64 p-4 bg-white dark:border-white 
+              dark:border dark:bg-black dark:text-white shadow-lg rounded-md text-center">
                 <h4 className="font-semibold">{item.title}</h4>
-                <p className="text-sm text-gray-600">{item.institution}</p>
-                <p className="text-sm text-gray-600">{item.location}</p>
-                <p className="text-sm text-gray-500">{item.duration}</p>
+                <p className="text-sm text-gray-600 dark:text-white">{item.institution}</p>
+                <p className="text-sm text-gray-600 dark:text-white">{item.location}</p>
+                <p className="text-sm text-gray-500 dark:text-white">{item.duration}</p>
                 <p className="font-bold">CGPA: {item.cgpa}</p>
               </div>
             )}
