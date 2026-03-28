@@ -109,6 +109,18 @@ export const achievements = [
 
 export const WEB3_ACCESS_KEY = "e1182209-8782-4829-a2d5-a05555e95a8c";
 export const slides = [
+   {
+    img: "./resumeAnalyzer.png",
+    date: "28 March 2026",
+    title: "AI-Resume-Analyzer",
+    text: "Built a AI-powered Resume Analyzer with  seamless authentication, upload and store resumes, and match candidates to jobs using smart AI evaluations. Get custom feedback and ATS scores tailored to each uploads",
+  },
+  {
+    img: "./habitTracker.png",
+    date: "20 February 2026",
+    title: "Shadow",
+    text: "Built a full-stack habit tracking app where new habit can be added and tracked"  
+  },
   {
     img: "./agape.png",
     date: "26 December 2019",
@@ -121,16 +133,5 @@ export const slides = [
     title: "Quick Chat",
     text: "Built a full-stack real-time chat application using Socket.io for instant message delivery and typing indicators",
   },
-   {
-    img: "./resumeAnalyzer.png",
-    date: "28 March 2026",
-    title: "AI-Resume-Analyzer",
-    text: "Built a AI-powered Resume Analyzer with  seamless authentication, upload and store resumes, and match candidates to jobs using smart AI evaluations. Get custom feedback and ATS scores tailored to each uploads",
-  },
-  {
-    img: "./habitTracker.png",
-    date: "20 February 2026",
-    title: "Shadow",
-    text: "Built a full-stack habit tracking app where new habit can be added and tracked"  },
-
+  
 ];
