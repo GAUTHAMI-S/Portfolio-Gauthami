@@ -110,16 +110,37 @@ export const achievements = [
 export const WEB3_ACCESS_KEY = "e1182209-8782-4829-a2d5-a05555e95a8c";
 export const slides = [
   {
-    img: "./agape.png",
-    date: "26 December 2019",
-    title: "Agape",
-    text: "Developed a cross-platform mobile app using React Native and Firebase in a 4-member team, reflecting strong teamwork.",
+    key: 1,
+    link: 'https://puter.com/app/ai-resume-analyzer-230',
+    img: "./resumeAnalyzer.png",
+    date: "28 March 2026",
+    title: "AI-Resume-Analyzer",
+    text: "Built a AI-powered Resume Analyzer with  seamless authentication, upload and store resumes, and match candidates to jobs using smart AI evaluations. Get custom feedback and ATS scores tailored to each uploads",
+
   },
   {
+    key: 2,
+    link: '',
+    img: "./habitTracker.png",
+    date: "20 February 2026",
+    title: "Shadow",
+    text: "Built a full-stack habit tracking app where new habit can be added and tracked"
+  },
+  {
+    key: 4,
+    link: 'https://chat-app-frontend-153l0k7kc-gauthami-s-projects-7e66a1c5.vercel.app',
     img: "./quickChat.png",
     date: "26 December 2019",
     title: "Quick Chat",
     text: "Built a full-stack real-time chat application using Socket.io for instant message delivery and typing indicators",
+  },
+  {
+    key: 3,
+    link: '',
+    img: "./agape.png",
+    date: "26 December 2019",
+    title: "Agape",
+    text: "Developed a cross-platform mobile app using React Native and Firebase in a 4-member team, reflecting strong teamwork.",
   },
 
 ];
